@@ -1,6 +1,6 @@
 /**
  * Student Attendance Analyzer - Main Application Controller
- * Manages view wizard states, file uploads, column mapping, search, filtering, sorting & CSV export.
+ * Manages view wizard states, file uploads, column mapping, search, filtering, sorting, CSV export & hash navigation.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -19,11 +19,27 @@ document.addEventListener('DOMContentLoaded', () => {
       searchQuery: '',
       statusFilter: 'All',
       sortField: 'name', // 'name', 'attendance', 'duration'
-      sortOrder: 'asc'
+      sortOrder: 'asc',
+      currentView: 'view-landing'
+    },
+
+    hashMap: {
+      'view-landing': 'landing',
+      'view-sheet-select': 'sheet-select',
+      'view-mapping': 'mapping',
+      'view-dashboard': 'dashboard'
+    },
+
+    viewMap: {
+      'landing': 'view-landing',
+      'sheet-select': 'view-sheet-select',
+      'mapping': 'view-mapping',
+      'dashboard': 'view-dashboard'
     },
 
     init: function() {
       this.bindEvents();
+      this.initRouting();
     },
 
     bindEvents: function() {
@@ -44,10 +60,20 @@ document.addEventListener('DOMContentLoaded', () => {
         btnProceedSheet.addEventListener('click', () => this.handleSheetConfirmed());
       }
 
+      const btnBackToLanding = document.getElementById('btnBackToLanding');
+      if (btnBackToLanding) {
+        btnBackToLanding.addEventListener('click', () => this.switchView('view-landing'));
+      }
+
       // Wizard Column Mapping
       const btnProceedMapping = document.getElementById('btnProceedMapping');
       if (btnProceedMapping) {
         btnProceedMapping.addEventListener('click', () => this.handleMappingConfirmed());
+      }
+
+      const btnBackToSheet = document.getElementById('btnBackToSheet');
+      if (btnBackToSheet) {
+        btnBackToSheet.addEventListener('click', () => this.switchView('view-sheet-select'));
       }
 
       // Dashboard Controls
@@ -82,18 +108,62 @@ document.addEventListener('DOMContentLoaded', () => {
         btnReset.addEventListener('click', () => this.resetToLanding());
       }
 
+      const btnBackToLandingDash = document.getElementById('btnBackToLandingDash');
+      if (btnBackToLandingDash) {
+        btnBackToLandingDash.addEventListener('click', () => this.resetToLanding());
+      }
+
       const btnExportCsv = document.getElementById('btnExportCsv');
       if (btnExportCsv) {
         btnExportCsv.addEventListener('click', () => this.exportCsv());
       }
     },
 
-    switchView: function(viewId) {
+    initRouting: function() {
+      // Listen for browser Back / Forward buttons & Hash changes
+      window.addEventListener('hashchange', () => this.handleHashChange());
+      window.addEventListener('popstate', () => this.handleHashChange());
+
+      // Initial route resolution on page load
+      this.handleHashChange();
+    },
+
+    handleHashChange: function() {
+      const hash = window.location.hash.replace('#', '').trim();
+      const targetView = this.viewMap[hash] || 'view-landing';
+
+      // Validation guard for data presence
+      if (targetView === 'view-dashboard' && this.state.allRecords.length === 0) {
+        this.switchView('view-landing', true);
+        return;
+      }
+      if (targetView === 'view-sheet-select' && !this.state.workbook) {
+        this.switchView('view-landing', true);
+        return;
+      }
+      if (targetView === 'view-mapping' && this.state.headers.length === 0) {
+        this.switchView('view-landing', true);
+        return;
+      }
+
+      this.switchView(targetView, false);
+    },
+
+    switchView: function(viewId, pushHash = true) {
+      this.state.currentView = viewId;
+
       document.querySelectorAll('.view-section').forEach(sec => {
         sec.classList.remove('active');
       });
       const target = document.getElementById(viewId);
       if (target) target.classList.add('active');
+
+      if (pushHash) {
+        const hashName = this.hashMap[viewId] || 'landing';
+        if (window.location.hash !== '#' + hashName) {
+          window.history.pushState({ viewId: viewId }, '', '#' + hashName);
+        }
+      }
     },
 
     // 1. File Upload Processing

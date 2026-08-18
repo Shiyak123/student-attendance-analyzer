@@ -111,7 +111,8 @@
           </select>
         </div>
 
-        <div style="display: flex; justify-content: flex-end; gap: 0.75rem; margin-top: 2rem;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem;">
+          <button id="btnBackToLanding" class="btn btn-secondary">&larr; Back to Upload</button>
           <button id="btnProceedSheet" class="btn btn-primary">Proceed to Column Mapping &rarr;</button>
         </div>
       </div>
@@ -135,7 +136,8 @@
           <!-- Dynamically populated mapping selectors -->
         </div>
 
-        <div style="display: flex; justify-content: flex-end; gap: 0.75rem; margin-top: 2rem;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem;">
+          <button id="btnBackToSheet" class="btn btn-secondary">&larr; Back to Sheet Selection</button>
           <button id="btnProceedMapping" class="btn btn-primary">Generate Dashboard &rarr;</button>
         </div>
       </div>
@@ -149,8 +151,11 @@
           <div class="dash-meta-title" id="dashFileName">File Name</div>
           <div class="dash-meta-details" id="dashSessionInfo">Session Info</div>
         </div>
-        <div>
-          <button id="btnExportCsv" class="btn btn-secondary">
+        <div style="display: flex; gap: 0.75rem; align-items: center;">
+          <button id="btnBackToLandingDash" class="btn btn-secondary">
+            &larr; Back to Upload
+          </button>
+          <button id="btnExportCsv" class="btn btn-primary">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
               <polyline points="7 10 12 15 17 10"></polyline>
