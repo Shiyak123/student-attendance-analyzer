@@ -1,0 +1,1012 @@
+[
+  {
+    "studentId": "STU001",
+    "studentName": "Student 001",
+    "registrationId": "REG001",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU002",
+    "studentName": "Student 002",
+    "registrationId": "REG002",
+    "firstJoin": "05 Sep 2026, 20:14",
+    "durationMinutes": 37,
+    "attendancePercentage": 26,
+    "attendanceStatus": "Partial",
+    "remark": "Attendance recorded"
+  },
+  {
+    "studentId": "STU003",
+    "studentName": "Student 003",
+    "registrationId": "REG003",
+    "firstJoin": "05 Sep 2026, 20:14",
+    "durationMinutes": 143,
+    "attendancePercentage": 100,
+    "attendanceStatus": "Full Attendance",
+    "remark": "Completed full lesson"
+  },
+  {
+    "studentId": "STU004",
+    "studentName": "Student 004",
+    "registrationId": "REG004",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU005",
+    "studentName": "Student 005",
+    "registrationId": "REG005",
+    "firstJoin": "05 Sep 2026, 20:25",
+    "durationMinutes": 134,
+    "attendancePercentage": 94,
+    "attendanceStatus": "Present",
+    "remark": "Attendance recorded"
+  },
+  {
+    "studentId": "STU006",
+    "studentName": "Student 006",
+    "registrationId": "REG006",
+    "firstJoin": "05 Sep 2026, 20:38",
+    "durationMinutes": 50,
+    "attendancePercentage": 35,
+    "attendanceStatus": "Partial",
+    "remark": "Attendance recorded"
+  },
+  {
+    "studentId": "STU007",
+    "studentName": "Student 007",
+    "registrationId": "REG007",
+    "firstJoin": "05 Sep 2026, 20:35",
+    "durationMinutes": 86,
+    "attendancePercentage": 60,
+    "attendanceStatus": "Partial",
+    "remark": "Attendance recorded"
+  },
+  {
+    "studentId": "STU008",
+    "studentName": "Student 008",
+    "registrationId": "REG008",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU009",
+    "studentName": "Student 009",
+    "registrationId": "REG009",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU010",
+    "studentName": "Student 010",
+    "registrationId": "REG010",
+    "firstJoin": "05 Sep 2026, 20:15",
+    "durationMinutes": 143,
+    "attendancePercentage": 100,
+    "attendanceStatus": "Full Attendance",
+    "remark": "Completed full lesson"
+  },
+  {
+    "studentId": "STU011",
+    "studentName": "Student 011",
+    "registrationId": "REG011",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU012",
+    "studentName": "Student 012",
+    "registrationId": "REG012",
+    "firstJoin": "05 Sep 2026, 20:14",
+    "durationMinutes": 58,
+    "attendancePercentage": 41,
+    "attendanceStatus": "Partial",
+    "remark": "Attendance recorded"
+  },
+  {
+    "studentId": "STU013",
+    "studentName": "Student 013",
+    "registrationId": "REG013",
+    "firstJoin": "05 Sep 2026, 20:04",
+    "durationMinutes": 76,
+    "attendancePercentage": 53,
+    "attendanceStatus": "Partial",
+    "remark": "Attendance recorded"
+  },
+  {
+    "studentId": "STU014",
+    "studentName": "Student 014",
+    "registrationId": "REG014",
+    "firstJoin": "05 Sep 2026, 20:29",
+    "durationMinutes": 10,
+    "attendancePercentage": 7,
+    "attendanceStatus": "Partial",
+    "remark": "Attendance recorded"
+  },
+  {
+    "studentId": "STU015",
+    "studentName": "Student 015",
+    "registrationId": "REG015",
+    "firstJoin": "05 Sep 2026, 20:16",
+    "durationMinutes": 142,
+    "attendancePercentage": 99,
+    "attendanceStatus": "Present",
+    "remark": "Attendance recorded"
+  },
+  {
+    "studentId": "STU016",
+    "studentName": "Student 016",
+    "registrationId": "REG016",
+    "firstJoin": "05 Sep 2026, 19:59",
+    "durationMinutes": 143,
+    "attendancePercentage": 100,
+    "attendanceStatus": "Full Attendance",
+    "remark": "Completed full lesson"
+  },
+  {
+    "studentId": "STU017",
+    "studentName": "Student 017",
+    "registrationId": "REG017",
+    "firstJoin": "05 Sep 2026, 20:10",
+    "durationMinutes": 143,
+    "attendancePercentage": 100,
+    "attendanceStatus": "Full Attendance",
+    "remark": "Completed full lesson"
+  },
+  {
+    "studentId": "STU018",
+    "studentName": "Student 018",
+    "registrationId": "REG018",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU019",
+    "studentName": "Student 019",
+    "registrationId": "REG019",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU020",
+    "studentName": "Student 020",
+    "registrationId": "REG020",
+    "firstJoin": "05 Sep 2026, 20:35",
+    "durationMinutes": 143,
+    "attendancePercentage": 100,
+    "attendanceStatus": "Full Attendance",
+    "remark": "Completed full lesson"
+  },
+  {
+    "studentId": "STU021",
+    "studentName": "Student 021",
+    "registrationId": "REG021",
+    "firstJoin": "05 Sep 2026, 19:59",
+    "durationMinutes": 143,
+    "attendancePercentage": 100,
+    "attendanceStatus": "Full Attendance",
+    "remark": "Completed full lesson"
+  },
+  {
+    "studentId": "STU022",
+    "studentName": "Student 022",
+    "registrationId": "REG022",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU023",
+    "studentName": "Student 023",
+    "registrationId": "REG023",
+    "firstJoin": "05 Sep 2026, 20:12",
+    "durationMinutes": 143,
+    "attendancePercentage": 100,
+    "attendanceStatus": "Full Attendance",
+    "remark": "Completed full lesson"
+  },
+  {
+    "studentId": "STU024",
+    "studentName": "Student 024",
+    "registrationId": "REG024",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU025",
+    "studentName": "Student 025",
+    "registrationId": "REG025",
+    "firstJoin": "05 Sep 2026, 20:17",
+    "durationMinutes": 143,
+    "attendancePercentage": 100,
+    "attendanceStatus": "Full Attendance",
+    "remark": "Completed full lesson"
+  },
+  {
+    "studentId": "STU026",
+    "studentName": "Student 026",
+    "registrationId": "REG026",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU027",
+    "studentName": "Student 027",
+    "registrationId": "REG027",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU028",
+    "studentName": "Student 028",
+    "registrationId": "REG028",
+    "firstJoin": "05 Sep 2026, 19:59",
+    "durationMinutes": 143,
+    "attendancePercentage": 100,
+    "attendanceStatus": "Full Attendance",
+    "remark": "Completed full lesson"
+  },
+  {
+    "studentId": "STU029",
+    "studentName": "Student 029",
+    "registrationId": "REG029",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU030",
+    "studentName": "Student 030",
+    "registrationId": "REG030",
+    "firstJoin": "05 Sep 2026, 20:10",
+    "durationMinutes": 143,
+    "attendancePercentage": 100,
+    "attendanceStatus": "Full Attendance",
+    "remark": "Completed full lesson"
+  },
+  {
+    "studentId": "STU031",
+    "studentName": "Student 031",
+    "registrationId": "REG031",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU032",
+    "studentName": "Student 032",
+    "registrationId": "REG032",
+    "firstJoin": "05 Sep 2026, 20:21",
+    "durationMinutes": 137,
+    "attendancePercentage": 96,
+    "attendanceStatus": "Present",
+    "remark": "Attendance recorded"
+  },
+  {
+    "studentId": "STU033",
+    "studentName": "Student 033",
+    "registrationId": "REG033",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU034",
+    "studentName": "Student 034",
+    "registrationId": "REG034",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU035",
+    "studentName": "Student 035",
+    "registrationId": "REG035",
+    "firstJoin": "05 Sep 2026, 20:12",
+    "durationMinutes": 143,
+    "attendancePercentage": 100,
+    "attendanceStatus": "Full Attendance",
+    "remark": "Completed full lesson"
+  },
+  {
+    "studentId": "STU036",
+    "studentName": "Student 036",
+    "registrationId": "REG036",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU037",
+    "studentName": "Student 037",
+    "registrationId": "REG037",
+    "firstJoin": "05 Sep 2026, 20:07",
+    "durationMinutes": 8,
+    "attendancePercentage": 6,
+    "attendanceStatus": "Partial",
+    "remark": "Attendance recorded"
+  },
+  {
+    "studentId": "STU038",
+    "studentName": "Student 038",
+    "registrationId": "REG038",
+    "firstJoin": "05 Sep 2026, 20:14",
+    "durationMinutes": 143,
+    "attendancePercentage": 100,
+    "attendanceStatus": "Full Attendance",
+    "remark": "Completed full lesson"
+  },
+  {
+    "studentId": "STU039",
+    "studentName": "Student 039",
+    "registrationId": "REG039",
+    "firstJoin": "05 Sep 2026, 20:29",
+    "durationMinutes": 129,
+    "attendancePercentage": 90,
+    "attendanceStatus": "Present",
+    "remark": "Attendance recorded"
+  },
+  {
+    "studentId": "STU040",
+    "studentName": "Student 040",
+    "registrationId": "REG040",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU041",
+    "studentName": "Student 041",
+    "registrationId": "REG041",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU042",
+    "studentName": "Student 042",
+    "registrationId": "REG042",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU043",
+    "studentName": "Student 043",
+    "registrationId": "REG043",
+    "firstJoin": "05 Sep 2026, 19:59",
+    "durationMinutes": 143,
+    "attendancePercentage": 100,
+    "attendanceStatus": "Full Attendance",
+    "remark": "Completed full lesson"
+  },
+  {
+    "studentId": "STU044",
+    "studentName": "Student 044",
+    "registrationId": "REG044",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU045",
+    "studentName": "Student 045",
+    "registrationId": "REG045",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU046",
+    "studentName": "Student 046",
+    "registrationId": "REG046",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU047",
+    "studentName": "Student 047",
+    "registrationId": "REG047",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU048",
+    "studentName": "Student 048",
+    "registrationId": "REG048",
+    "firstJoin": "05 Sep 2026, 20:04",
+    "durationMinutes": 143,
+    "attendancePercentage": 100,
+    "attendanceStatus": "Full Attendance",
+    "remark": "Completed full lesson"
+  },
+  {
+    "studentId": "STU049",
+    "studentName": "Student 049",
+    "registrationId": "REG049",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU050",
+    "studentName": "Student 050",
+    "registrationId": "REG050",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU051",
+    "studentName": "Student 051",
+    "registrationId": "REG051",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU052",
+    "studentName": "Student 052",
+    "registrationId": "REG052",
+    "firstJoin": "05 Sep 2026, 20:16",
+    "durationMinutes": 142,
+    "attendancePercentage": 99,
+    "attendanceStatus": "Present",
+    "remark": "Attendance recorded"
+  },
+  {
+    "studentId": "STU053",
+    "studentName": "Student 053",
+    "registrationId": "REG053",
+    "firstJoin": "05 Sep 2026, 20:21",
+    "durationMinutes": 143,
+    "attendancePercentage": 100,
+    "attendanceStatus": "Full Attendance",
+    "remark": "Completed full lesson"
+  },
+  {
+    "studentId": "STU054",
+    "studentName": "Student 054",
+    "registrationId": "REG054",
+    "firstJoin": "05 Sep 2026, 20:13",
+    "durationMinutes": 143,
+    "attendancePercentage": 100,
+    "attendanceStatus": "Full Attendance",
+    "remark": "Completed full lesson"
+  },
+  {
+    "studentId": "STU055",
+    "studentName": "Student 055",
+    "registrationId": "REG055",
+    "firstJoin": "05 Sep 2026, 20:23",
+    "durationMinutes": 135,
+    "attendancePercentage": 94,
+    "attendanceStatus": "Present",
+    "remark": "Attendance recorded"
+  },
+  {
+    "studentId": "STU056",
+    "studentName": "Student 056",
+    "registrationId": "REG056",
+    "firstJoin": "05 Sep 2026, 20:15",
+    "durationMinutes": 143,
+    "attendancePercentage": 100,
+    "attendanceStatus": "Full Attendance",
+    "remark": "Completed full lesson"
+  },
+  {
+    "studentId": "STU057",
+    "studentName": "Student 057",
+    "registrationId": "REG057",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU058",
+    "studentName": "Student 058",
+    "registrationId": "REG058",
+    "firstJoin": "05 Sep 2026, 20:20",
+    "durationMinutes": 81,
+    "attendancePercentage": 57,
+    "attendanceStatus": "Partial",
+    "remark": "Attendance recorded"
+  },
+  {
+    "studentId": "STU059",
+    "studentName": "Student 059",
+    "registrationId": "REG059",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU060",
+    "studentName": "Student 060",
+    "registrationId": "REG060",
+    "firstJoin": "05 Sep 2026, 20:15",
+    "durationMinutes": 143,
+    "attendancePercentage": 100,
+    "attendanceStatus": "Full Attendance",
+    "remark": "Completed full lesson"
+  },
+  {
+    "studentId": "STU061",
+    "studentName": "Student 061",
+    "registrationId": "REG061",
+    "firstJoin": "05 Sep 2026, 20:14",
+    "durationMinutes": 143,
+    "attendancePercentage": 100,
+    "attendanceStatus": "Full Attendance",
+    "remark": "Completed full lesson"
+  },
+  {
+    "studentId": "STU062",
+    "studentName": "Student 062",
+    "registrationId": "REG062",
+    "firstJoin": "05 Sep 2026, 20:14",
+    "durationMinutes": 72,
+    "attendancePercentage": 50,
+    "attendanceStatus": "Partial",
+    "remark": "Attendance recorded"
+  },
+  {
+    "studentId": "STU063",
+    "studentName": "Student 063",
+    "registrationId": "REG063",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU064",
+    "studentName": "Student 064",
+    "registrationId": "REG064",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU065",
+    "studentName": "Student 065",
+    "registrationId": "REG065",
+    "firstJoin": "05 Sep 2026, 20:20",
+    "durationMinutes": 140,
+    "attendancePercentage": 98,
+    "attendanceStatus": "Present",
+    "remark": "Attendance recorded"
+  },
+  {
+    "studentId": "STU066",
+    "studentName": "Student 066",
+    "registrationId": "REG066",
+    "firstJoin": "05 Sep 2026, 20:18",
+    "durationMinutes": 69,
+    "attendancePercentage": 48,
+    "attendanceStatus": "Partial",
+    "remark": "Attendance recorded"
+  },
+  {
+    "studentId": "STU067",
+    "studentName": "Student 067",
+    "registrationId": "REG067",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU068",
+    "studentName": "Student 068",
+    "registrationId": "REG068",
+    "firstJoin": "05 Sep 2026, 20:25",
+    "durationMinutes": 64,
+    "attendancePercentage": 45,
+    "attendanceStatus": "Partial",
+    "remark": "Attendance recorded"
+  },
+  {
+    "studentId": "STU069",
+    "studentName": "Student 069",
+    "registrationId": "REG069",
+    "firstJoin": "05 Sep 2026, 20:15",
+    "durationMinutes": 143,
+    "attendancePercentage": 100,
+    "attendanceStatus": "Full Attendance",
+    "remark": "Completed full lesson"
+  },
+  {
+    "studentId": "STU070",
+    "studentName": "Student 070",
+    "registrationId": "REG070",
+    "firstJoin": "05 Sep 2026, 20:14",
+    "durationMinutes": 1,
+    "attendancePercentage": 1,
+    "attendanceStatus": "Partial",
+    "remark": "Attendance recorded"
+  },
+  {
+    "studentId": "STU071",
+    "studentName": "Student 071",
+    "registrationId": "REG071",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU072",
+    "studentName": "Student 072",
+    "registrationId": "REG072",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU073",
+    "studentName": "Student 073",
+    "registrationId": "REG073",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "Not Available",
+    "studentName": "Student 074",
+    "registrationId": "Not Available",
+    "firstJoin": "05 Sep 2026, 19:59",
+    "durationMinutes": 143,
+    "attendancePercentage": 100,
+    "attendanceStatus": "Full Attendance",
+    "remark": "Completed full lesson"
+  },
+  {
+    "studentId": "STU075",
+    "studentName": "Student 075",
+    "registrationId": "REG075",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU076",
+    "studentName": "Student 076",
+    "registrationId": "REG076",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU077",
+    "studentName": "Student 077",
+    "registrationId": "REG077",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "Not Available",
+    "studentName": "Student 078",
+    "registrationId": "Not Available",
+    "firstJoin": "05 Sep 2026, 19:59",
+    "durationMinutes": 143,
+    "attendancePercentage": 100,
+    "attendanceStatus": "Full Attendance",
+    "remark": "Completed full lesson"
+  },
+  {
+    "studentId": "STU079",
+    "studentName": "Student 079",
+    "registrationId": "REG079",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU080",
+    "studentName": "Student 080",
+    "registrationId": "REG080",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU081",
+    "studentName": "Student 081",
+    "registrationId": "REG081",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU082",
+    "studentName": "Student 082",
+    "registrationId": "REG082",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU083",
+    "studentName": "Student 083",
+    "registrationId": "REG083",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "Not Available",
+    "studentName": "Student 084",
+    "registrationId": "Not Available",
+    "firstJoin": "05 Sep 2026, 19:59",
+    "durationMinutes": 143,
+    "attendancePercentage": 100,
+    "attendanceStatus": "Full Attendance",
+    "remark": "Completed full lesson"
+  },
+  {
+    "studentId": "Not Available",
+    "studentName": "Student 085",
+    "registrationId": "Not Available",
+    "firstJoin": "05 Sep 2026, 19:59",
+    "durationMinutes": 143,
+    "attendancePercentage": 100,
+    "attendanceStatus": "Full Attendance",
+    "remark": "Completed full lesson"
+  },
+  {
+    "studentId": "Not Available",
+    "studentName": "Student 086",
+    "registrationId": "Not Available",
+    "firstJoin": "05 Sep 2026, 19:59",
+    "durationMinutes": 143,
+    "attendancePercentage": 100,
+    "attendanceStatus": "Full Attendance",
+    "remark": "Completed full lesson"
+  },
+  {
+    "studentId": "STU087",
+    "studentName": "Student 087",
+    "registrationId": "REG087",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "Not Available",
+    "studentName": "Student 088",
+    "registrationId": "Not Available",
+    "firstJoin": "05 Sep 2026, 19:59",
+    "durationMinutes": 143,
+    "attendancePercentage": 100,
+    "attendanceStatus": "Full Attendance",
+    "remark": "Completed full lesson"
+  },
+  {
+    "studentId": "Not Available",
+    "studentName": "Student 089",
+    "registrationId": "Not Available",
+    "firstJoin": "05 Sep 2026, 19:59",
+    "durationMinutes": 143,
+    "attendancePercentage": 100,
+    "attendanceStatus": "Full Attendance",
+    "remark": "Completed full lesson"
+  },
+  {
+    "studentId": "STU090",
+    "studentName": "Student 090",
+    "registrationId": "REG090",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU091",
+    "studentName": "Student 091",
+    "registrationId": "REG091",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU092",
+    "studentName": "Student 092",
+    "registrationId": "REG092",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU093",
+    "studentName": "Student 093",
+    "registrationId": "REG093",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU094",
+    "studentName": "Student 094",
+    "registrationId": "REG094",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU095",
+    "studentName": "Student 095",
+    "registrationId": "REG095",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU096",
+    "studentName": "Student 096",
+    "registrationId": "REG096",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "Not Available",
+    "studentName": "Student 097",
+    "registrationId": "Not Available",
+    "firstJoin": "05 Sep 2026, 19:59",
+    "durationMinutes": 143,
+    "attendancePercentage": 100,
+    "attendanceStatus": "Full Attendance",
+    "remark": "Completed full lesson"
+  },
+  {
+    "studentId": "STU098",
+    "studentName": "Student 098",
+    "registrationId": "REG098",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU099",
+    "studentName": "Student 099",
+    "registrationId": "REG099",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU100",
+    "studentName": "Student 100",
+    "registrationId": "REG100",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  },
+  {
+    "studentId": "STU101",
+    "studentName": "Student 101",
+    "registrationId": "REG101",
+    "firstJoin": "Not Available",
+    "durationMinutes": 0,
+    "attendancePercentage": 0,
+    "attendanceStatus": "Absent",
+    "remark": "No attendance recorded"
+  }
+]

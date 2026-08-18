@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Attendance Analyzer</title>
+
+  <!-- CSS Design System -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+  <!-- SheetJS Library (Local Asset with CDN Fallback) -->
+  <script src="./assets/xlsx.full.min.js"></script>
+  <script>
+    if (typeof XLSX === 'undefined') {
+      document.write('<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"><\/script>');
+    }
+  </script>
+</head>
+<body>
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="container header-content">
+      <div class="brand">
+        <div class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+            <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+            <path d="M9 12l2 2 4-4"></path>
+          </svg>
+        </div>
+        <div>
+          <h1>Student Attendance Analyzer</h1>
+          <div class="brand-subtitle">Instant Browser-Based Excel Attendance Processing</div>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <button id="btnReset" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"></path>
+            <path d="M21 3v5h-5"></path>
+          </svg>
+          Upload New File
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Privacy Notice Banner -->
+    <div class="privacy-banner">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+        <path d="m9 12 2 2 4-4"></path>
+      </svg>
+      <span><strong>Privacy Notice:</strong> Your Excel file is processed locally inside your browser and is not uploaded to any server.</span>
+    </div>
+
+    <!-- VIEW 1: LANDING SCREEN -->
+    <section id="view-landing" class="view-section active">
+      <div class="landing-card">
+        <h2 class="landing-title">Analyze Excel Attendance Data</h2>
+        <p class="landing-desc">Upload an Excel attendance file (.xlsx / .xls) to generate an interactive attendance report instantly.</p>
+
+        <div class="landing-actions">
+          <div class="file-input-wrapper">
+            <button class="btn btn-primary" style="padding: 0.85rem 1.75rem; font-size: 1rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="17 8 12 3 7 8"></polyline>
+                <line x1="12" y1="3" x2="12" y2="15"></line>
+              </svg>
+              Upload Excel File
+            </button>
+            <input type="file" id="excelFileInput" accept=".xlsx, .xls">
+          </div>
+
+          <button id="btnSample" class="btn btn-outline" style="padding: 0.85rem 1.75rem; font-size: 1rem;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+            View Sample Dashboard
+          </button>
+        </div>
+
+        <div class="format-info">Supported File Formats: .xlsx, .xls | Works 100% Offline</div>
+      </div>
+    </section>
+
+    <!-- VIEW 2: SHEET SELECTION -->
+    <section id="view-sheet-select" class="view-section">
+      <div class="wizard-card">
+        <h2 class="wizard-title">Select Attendance Sheet</h2>
+        <p class="wizard-desc">Multiple sheets were detected in your Excel file. Please choose the sheet containing the final attendance data.</p>
+
+        <div class="form-group" style="background: var(--bg-subtle); padding: 1rem; border-radius: var(--radius-sm); margin-bottom: 1.5rem;">
+          <div style="font-weight: 700;" id="displayFileName">Attendance.xlsx</div>
+          <div style="font-size: 0.85rem; color: var(--text-muted);" id="displaySheetCount">7 sheets detected</div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="sheetSelectDropdown">Target Sheet:</label>
+          <select id="sheetSelectDropdown" class="form-select">
+            <!-- Dynamically populated -->
+          </select>
+        </div>
+
+        <div style="display: flex; justify-content: flex-end; gap: 0.75rem; margin-top: 2rem;">
+          <button id="btnProceedSheet" class="btn btn-primary">Proceed to Column Mapping &rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 3: COLUMN MAPPING -->
+    <section id="view-mapping" class="view-section">
+      <div class="wizard-card" style="max-width: 900px;">
+        <h2 class="wizard-title">Confirm Column Mapping</h2>
+        <p class="wizard-desc">Verify that the detected sheet headers match the required attendance fields. Adjust mapping manually if needed.</p>
+
+        <div class="form-group" style="background: #eff6ff; border: 1px solid #bfdbfe; padding: 1rem; border-radius: var(--radius-sm); margin-bottom: 1.5rem;">
+          <label class="form-label" for="scheduledDurationInput">Scheduled Session Duration (Minutes):</label>
+          <input type="number" id="scheduledDurationInput" class="form-input" value="143" min="1" max="1440" style="max-width: 200px;">
+          <div style="font-size: 0.8rem; color: #1e40af; margin-top: 0.3rem;">
+            Used to calculate Attendance % if raw attendance percentage is not present in Excel. (Attendance % = Total Duration / Scheduled Duration × 100, capped at 100%).
+          </div>
+        </div>
+
+        <div id="mappingGrid" class="mapping-grid">
+          <!-- Dynamically populated mapping selectors -->
+        </div>
+
+        <div style="display: flex; justify-content: flex-end; gap: 0.75rem; margin-top: 2rem;">
+          <button id="btnProceedMapping" class="btn btn-primary">Generate Dashboard &rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 4: MAIN DASHBOARD -->
+    <section id="view-dashboard" class="view-section">
+      <!-- Dashboard Meta Header -->
+      <div class="dashboard-header-info">
+        <div>
+          <div class="dash-meta-title" id="dashFileName">File Name</div>
+          <div class="dash-meta-details" id="dashSessionInfo">Session Info</div>
+        </div>
+        <div>
+          <button id="btnExportCsv" class="btn btn-secondary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Download Filtered CSV
+          </button>
+        </div>
+      </div>
+
+      <!-- KPI Summary Metric Cards -->
+      <div class="kpi-grid">
+        <div class="kpi-card kpi-total">
+          <div class="kpi-label">Total Students</div>
+          <div class="kpi-value" id="kpiTotal">0</div>
+          <div class="kpi-sub">Registered Attendees</div>
+        </div>
+        <div class="kpi-card kpi-full">
+          <div class="kpi-label">Full Attendance</div>
+          <div class="kpi-value" id="kpiFull" style="color: var(--status-full);">0</div>
+          <div class="kpi-sub">100% Attendance</div>
+        </div>
+        <div class="kpi-card kpi-present">
+          <div class="kpi-label">Present</div>
+          <div class="kpi-value" id="kpiPresent" style="color: var(--status-present);">0</div>
+          <div class="kpi-sub">75% - 99% Attendance</div>
+        </div>
+        <div class="kpi-card kpi-partial">
+          <div class="kpi-label">Partial</div>
+          <div class="kpi-value" id="kpiPartial" style="color: var(--status-partial);">0</div>
+          <div class="kpi-sub">1% - 74% Attendance</div>
+        </div>
+        <div class="kpi-card kpi-absent">
+          <div class="kpi-label">Absent</div>
+          <div class="kpi-value" id="kpiAbsent" style="color: var(--status-absent);">0</div>
+          <div class="kpi-sub">0% Attendance</div>
+        </div>
+        <div class="kpi-card kpi-avg">
+          <div class="kpi-label">Average %</div>
+          <div class="kpi-value" id="kpiAvg" style="color: #8b5cf6;">0%</div>
+          <div class="kpi-sub">Overall Average</div>
+        </div>
+      </div>
+
+      <!-- Middle Section: Doughnut Chart & Info -->
+      <div class="dashboard-middle">
+        <div class="chart-card">
+          <h3 class="chart-title">Attendance Distribution</h3>
+          <div class="chart-container">
+            <canvas id="attendanceChart"></canvas>
+          </div>
+        </div>
+
+        <!-- Controls Bar -->
+        <div class="controls-card">
+          <div style="font-weight: 700; margin-bottom: 0.85rem;">Filter & Search Records</div>
+          <div class="controls-row" style="margin-bottom: 1rem;">
+            <div class="search-box">
+              <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input type="text" id="searchInput" class="search-input" placeholder="Search by Student Name, ID, or Reg ID...">
+            </div>
+
+            <div class="sort-group">
+              <span class="sort-label">Sort by:</span>
+              <select id="sortSelect" class="form-select" style="width: auto; padding: 0.45rem 0.75rem;">
+                <option value="name">Student Name (A-Z)</option>
+                <option value="attendance">Attendance % (High to Low)</option>
+                <option value="duration">Duration (High to Low)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="controls-row">
+            <div class="filter-pills">
+              <button class="pill-btn active" data-status="All">All</button>
+              <button class="pill-btn" data-status="Full Attendance">Full Attendance</button>
+              <button class="pill-btn" data-status="Present">Present</button>
+              <button class="pill-btn" data-status="Partial">Partial</button>
+              <button class="pill-btn" data-status="Absent">Absent</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Table -->
+      <div class="record-counter" id="recordCounter">Showing 0 of 0 students</div>
+      <div class="table-card">
+        <div class="table-responsive">
+          <table class="student-table">
+            <thead>
+              <tr>
+                <th>Student ID</th>
+                <th>Student Name</th>
+                <th>Registration ID</th>
+                <th>First Join</th>
+                <th>Duration</th>
+                <th>Attendance %</th>
+                <th>Status</th>
+                <th>Remark</th>
+              </tr>
+            </thead>
+            <tbody id="studentTableBody">
+              <!-- Dynamically populated rows -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <div class="container">
+      Student Attendance Analyzer &copy; 2026 | Built for Static Client-Side Processing & GitHub Pages
+    </div>
+  </footer>
+
+  <!-- App Modules -->
+  <script src="./js/excel-reader.js"></script>
+  <script src="./js/analyzer.js"></script>
+  <script src="./js/chart-manager.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
